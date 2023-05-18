@@ -11,10 +11,15 @@ class Program
         job1._startYear = 2019;
         job1._endYear = 2022;
 
+        Console.WriteLine($"{job1._jobTitle} ({job1._company}) {job1._startYear}--{job1._endYear}");
+
         Job job2 = new Job();
         job2._jobTitle = "Janiitor";
         job2._company = "Nike";
         job2._startYear = 1999;
         job2._endYear = 2023;
+        Console.WriteLine();
+        Console.WriteLine($"{job2._jobTitle} ({job2._company}) {job2._startYear}--{job2._endYear}");
+
     }
 }
