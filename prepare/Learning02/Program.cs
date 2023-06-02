@@ -19,7 +19,18 @@ class Program
         job2._startYear = 1999;
         job2._endYear = 2023;
         Console.WriteLine();
-        Console.WriteLine($"{job2._jobTitle} ({job2._company}) {job2._startYear}--{job2._endYear}");
+        job2.Display();
+
+        Resume resume1 = new Resume();
+        resume1._name = "Wilson Houston";
+
+        resume1._job.Add(job1);
+        resume1._job.Add(job2);
+
+        resume1.Display();
+        
+
+
 
     }
 }
